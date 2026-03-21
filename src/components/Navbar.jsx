@@ -39,7 +39,7 @@ function Navbar(props) {
                 <Link
                   className="nav-link active fs-5"
                   aria-current="page"
-                  to="#"
+                  to="/"
                 >
                   Home
                 </Link>
@@ -49,7 +49,7 @@ function Navbar(props) {
                   <Link
                     className="nav-link active fs-5"
                     aria-current="page"
-                    to="#"
+                    to="/MyOrder"
                   >
                     My Orders
                   </Link>

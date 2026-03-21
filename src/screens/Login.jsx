@@ -5,7 +5,7 @@ function Login() {
   let navigate=useNavigate();
       const handleSubmit = async (e) => {
           e.preventDefault();
-          console.log(JSON.stringify(Credential));
+          console.log(JSON.stringify( Credential));
   
           const response = await fetch("http://localhost:5005/api/login/loginuser", {
               method: 'POST',
@@ -20,7 +20,7 @@ function Login() {
               alert("Enter valid credentials");
           }
           if(json.success){
-            localStorage.setItem("user_email_id",Credential.email)
+            localStorage.setItem("userEmail",Credential.email)
             localStorage.setItem("authtoken",json.authtoken)
             console.log(localStorage.getItem("authtoken"))
             navigate("/");

@@ -30,17 +30,6 @@
 // module.exports=mongoose.model('user',UserSchema);
 
 
-
-
-
-
-
-
-
-
-
-
-
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 

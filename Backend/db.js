@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-// const mongouri = "mongodb+srv://ritiktig61:7903Rks@cluster0.f93rz.mongodb.net/gofoodmern?retryWrites=true&w=majority&appName=Cluster0"
-// const mongouri ="mongodb+srv://ritiktig61:7903Rks@cluster0.f93rz.mongodb.net/gofoodmern?retryWrites=true&w=majority&appName=Cluster0"
-const mongouri ="mongodb://ritiktig61:7903Rks@cluster0-shard-00-00.f93rz.mongodb.net:27017,cluster0-shard-00-01.f93rz.mongodb.net:27017,cluster0-shard-00-02.f93rz.mongodb.net:27017/gofoodmern?ssl=true&replicaSet=atlas-4fvpko-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0"
+
+const mongouri = process.env.MONGODB_URI;
 const mongodb = async () => {
     try {
         await mongoose.connect(mongouri);
